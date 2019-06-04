@@ -41,10 +41,7 @@ repositories {
     }
 }
 
-def googlePlayServicesVersion = rootProject.hasProperty('googlePlayServicesVersion') ? rootProject.googlePlayServicesVersion : DEFAULT_GOOGLE_PLAY_SERVICES_VERSION
-
 dependencies {
-    implementation "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
+    implementation "com.google.android.gms:play-services-location:16+"
     api 'com.facebook.react:react-native:+'
 }
-  
